@@ -2,18 +2,52 @@
   margin: 0;
   padding: 0;
 }
+.app-name{
+background-color: green;
+text-align: center;
+padding-top: 2%;
+flex-grow: 1;
 
+
+}
 #container{
-  background-color: red;
-  
+  background-color: yellow;
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+  grid-gap: 20px;
+}
+.search-section{
+text-align: center;
+padding: 30px;
+
+}
+.message-class{
+  grid-column: 1/4;
+  margin-bottom: 20px;
 
 }
 .logo {
-
-  width:100px;
-  height:auto;
+  display: block;
+  width:10%;
+  height:10%;
+  background-color: hotpink;
+}
+.icon{
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
 }
 .food-list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   
   
+}
+.food-list img{
+ height: 70%;
+ width: 70%;
+ 
+}
+.hidden-result-class{
+display:none;
 }
