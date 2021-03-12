@@ -78,7 +78,7 @@ API Snippet: A sample snippet of JSON from a successful GET request you have mad
 ```
 Wireframes: The proposed layout and design of your app. Create mockups for your views. If your are creating multiple views including both desktop and mobile formats, and consider whether or not you need to account for landscape and portrait orientations. Please use a digital tool to complete your wireframe.
 
-https://wireframepro.mockflow.com/view/M6f475e8312c76d8ea8a5ce9c1714406c1615207482488#/page/f46df5e8a9e0438ab73c3e60b8bbbad3
+https://www.figma.com/file/0DVvE2mJpSFKOTuyNyfz4q/Cooking-recipe-App?node-id=5%3A3
 
 
 MVP: A list of features you will need to build in order to meet the Minimum Viable 
@@ -87,14 +87,15 @@ MVP: A list of features you will need to build in order to meet the Minimum Viab
 1. Ability to search using keywords
 1. Displays images of that matches the keyword given
 1. Clicking any image gives you detailed information on how to make the meal
-2. to share recipe to social networks(facebook,twitter)
+1. to review a recipe
+
 
 Product. This will be the rubric your project will be graded against.
 
 Post-MVP: A list of additional/advanced features you would like to include in your app after you have met MVP.
 1. Login/authentication
-1. to review a recipe
 1. like button
+1 to share recipe to social networks(facebook,twitter)
 
 
 
