@@ -1,20 +1,26 @@
+body{
+  background-image: url("background.jpg"); 
+}
 * {
   margin: 0;
   padding: 0;
 }
 .app-name{
-background-color: green;
+  /* background-color: green; */
 text-align: center;
 padding-top: 2%;
-flex-grow: 1;
+flex-grow: 4; 
+color: blue;
+font-family: 'Roboto', sans-serif;
+
 
 
 }
 #container{
-  background-color: yellow;
-  grid-template-columns: auto auto auto;
+   background-color: white; 
+  /* grid-template-columns: auto auto auto; */
   padding: 20px;
-  grid-gap: 20px;
+  /* grid-gap: 20px; */
 }
 .search-section{
 text-align: center;
@@ -22,7 +28,7 @@ padding: 30px;
 
 }
 .message-class{
-  grid-column: 1/4;
+  /* grid-column: 1/4; */
   margin-bottom: 20px;
 
 }
@@ -30,7 +36,7 @@ padding: 30px;
   display: block;
   width:10%;
   height:10%;
-  background-color: hotpink;
+  /* background-color: hotpink; */
 }
 .icon{
   display: flex;
@@ -42,12 +48,79 @@ padding: 30px;
   grid-template-columns: repeat(3, 1fr);
   
   
+  
+}
+.food-list div{
+border: 1px solid red;
+text-align: center;
 }
 .food-list img{
  height: 70%;
  width: 70%;
+
  
 }
 .hidden-result-class{
 display:none;
+}
+.hidden-single-meal{
+  display: none;
+}
+#search{
+  width: 200px;
+  height: 80px;
+  border-radius: 20px;
+  color:white;
+  font-size: 30px;
+  margin-left: 25px;
+  margin:16px 0 16px 10px;
+  
+  
+}
+.video-class{
+  margin-top: 20px;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-top: 10px;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.single-meal h1{
+  margin-bottom: 25px;
+}
+#search-random{
+  width: 200px;
+  height: 80px;
+  border-radius: 20px;
+  color:white;
+  font-size: 30px;
+}
+#blank{
+  width: 300px;
+  height: 80px;
+  text-align:center;
+  font-size: 30px;
+  margin-left: 30px;
+  padding-bottom: 12px;
+  border-radius: 20px;
+}
+.single-meal {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+textarea{
+  display: block;
+  margin: 20px auto;
+  margin-top: 20px;
+}
+.table-class{
+  margin:0 auto;
+}
+@media screen and (max-width:600px){
+  .food-list{
+    background-color: red;
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
 }
