@@ -1,11 +1,9 @@
 const searchTerm = document.querySelector("#blank");
-
 const searchButton = document.querySelector("#search");
 const searchRandom = document.querySelector("#search-random");
 const displayMealList = document.querySelector(".food-list");
 const singleMeal = document.querySelector(".single-meal");
 const messagetouser = document.querySelector(".message-class");
-
 searchButton.addEventListener("click", getRecipe);
 searchRandom.addEventListener("click", getRandomDish);
 
@@ -36,7 +34,8 @@ async function getRecipe(event) {
     );
     if (searchTerm.value == "") {
       alert("Please give me a keyword");
-      }
+    }
+    //console.log(response)
     showListofMeals(response.data.meals);
   } catch (err) {
     console.log(err);
@@ -149,10 +148,7 @@ function GetMealInstruction(element) {
       hasTags.appendChild(button);
     });
   }
-  //console.log(element.strTags.split(","))
-
-  //hasTags.href = element.strTags
-
+  
   instructionHeading.innerText = "Instructions";
   ingredientheading.innerText = "Ingredients";
   hasTagsHeading.innerText = "#Tags";
@@ -160,9 +156,7 @@ function GetMealInstruction(element) {
   mealInstruction.innerText = element.strInstructions;
   reviewHeading.innerText = "Reviews";
   hasTagsHeading.innerText = "#Tags";
-
   const arryOfIngredients = [];
-
   for (let i = 1; i < 30; i++) {
     // console.log(element['strIngredient' + i])
     if (element["strIngredient" + i]) {
@@ -186,8 +180,6 @@ function GetMealInstruction(element) {
   singleMeal.appendChild(instructionHeading);
   singleMeal.appendChild(mealInstruction);
   singleMeal.appendChild(ingredientheading);
-
-  //singleMeal.appendChild(mealIngredients)
   singleMeal.appendChild(IngredientsTable);
   singleMeal.appendChild(reviewHeading);
   singleMeal.appendChild(textArea);

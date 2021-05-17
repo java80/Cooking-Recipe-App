@@ -2,11 +2,9 @@
 ##[Cooking-Recipe-App](https://java80.github.io/Cooking-Recipe-App/)
 ## Javascript recipe app using https://www.themealdb.com/api.php api
 
-Before you start any actual coding, you must meet with your Squad Leader for ~10 minutes to get your app idea approved. Prepare the following materials before your meeting and put them in your README.md:
-
 App Title: Yumm My Recipe App
 
-App Description: Yumm My Recipe App allows you to find recipes you can make 
+App Description: Yumm My Recipe App allows you to find recipes
 
 API: The API being used is https://www.themealdb.com/api.php .
 
@@ -76,9 +74,12 @@ API Snippet: A sample snippet of JSON from a successful GET request you have mad
 }
 
 ```
-Wireframes: The proposed layout and design of your app. Create mockups for your views. If your are creating multiple views including both desktop and mobile formats, and consider whether or not you need to account for landscape and portrait orientations. Please use a digital tool to complete your wireframe.
+Wireframes: 
 
-https://www.figma.com/file/0DVvE2mJpSFKOTuyNyfz4q/Cooking-recipe-App?node-id=5%3A3
+![Mobile-wireframe](https://portfolioike.s3.us-east-2.amazonaws.com/Mobile-recipe_wireframe.png
+)
+![Desktop-wireframe](https://portfolioike.s3.us-east-2.amazonaws.com/desktop-cooking-app-wireframe.png
+)
 
 
 MVP: A list of features you will need to build in order to meet the Minimum Viable 
@@ -89,9 +90,6 @@ MVP: A list of features you will need to build in order to meet the Minimum Viab
 1. Clicking any image gives you detailed information on how to make the meal
 1. to review a recipe
 
-
-Product. This will be the rubric your project will be graded against.
-
 Post-MVP: A list of additional/advanced features you would like to include in your app after you have met MVP.
 1. Login/authentication
 1. like button
@@ -101,11 +99,7 @@ Post-MVP: A list of additional/advanced features you would like to include in yo
 
 ### Goals: What you plan to accomplish for each day of the project week.
 
-Priority Matrix: A graph of your intended areas of development (Pseudocoding, Design, HTML, CSS, JavaScript, Testing, etc) plotted on an X/Y axis where X represents time to completion and Y represents priority. Use a professional tool or upload a well drawn image using an image hosting site such as Cloudinary or a similar hosting service.
 
-
-Timeframes: How long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day. Components should be broken down into a maximum of 3 hours time blocks.
-Are you interested in styling your README.md to make it look nice? Don't know how to include photos or create links? Check out this Markdown Cheetsheet!
 
 | Days 	| Hours 	|                                          	|                                         	|
 |------	|-------	|------------------------------------------	|-----------------------------------------	|
@@ -126,28 +120,6 @@ Are you interested in styling your README.md to make it look nice? Don't know ho
 |      	|       	|                                          	|                                         	|
 | 4    	| 2     	| Testing                                  	| Testing                                 	|
 
-
-STEP 3: Make a New Repo
-
-Make a new personal GitHub repo for your project. DO NOT FORK THIS REPO.
-This new repo should be under your personal Github, NOT your General Assembly Github account.
-Make sure your new repo is set to "Public" and initialize it with a README.md file. This will be your project worksheet.
-Send a link for your repository to your Squad Leader.
-After your have been approved, clone this new repository down to your machine.
-CD into the project directory and touch index.html, style.css and script.js files.
-Test a commit and push it to make sure everything is connected with git commit -m "My Ducks Project 1!".
-Note: Your repository should not be called project-1! Think of a name for your application, and then name your repository after your application.
-
-STEP 4: 🔴 Build Your Project MVP — Mandatory To Pass
-Your application must meet these requirements:
-Built with HTML, CSS, and JavaScript.
-Styled using Flexbox or Grid.
-Use Axios to make a request to an external data source and insert some of the retrieved data on to the DOM.
-Implement responsive design using at least one media query/breakpoint (i.e. desktop, tablet, mobile, etc).
-Fulfill the build requirements you have specified in your MVP.
-Deployed site to a hosting service like Github Pages.
-Make commits to GitHub every day.
-A README.md file that contains your project worksheet, a link to your live, deployed site, and any necessary installation instructions such as npm i.
 
 
 
