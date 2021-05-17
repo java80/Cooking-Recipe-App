@@ -16,7 +16,6 @@ async function getRandomDish(event) {
     let randomResponse = await axios.get(
       "https://www.themealdb.com/api/json/v1/1/random.php"
     );
-    // console.log(randomResponse)
     GetMealInstruction(randomResponse.data.meals[0]);
   } catch (err) {
     console.log(err);
@@ -35,7 +34,7 @@ async function getRecipe(event) {
     if (searchTerm.value == "") {
       alert("Please give me a keyword");
     }
-    //console.log(response)
+
     showListofMeals(response.data.meals);
   } catch (err) {
     console.log(err);
@@ -113,8 +112,6 @@ function GetMealInstruction(element) {
   reviewButton.id = "SendReview";
   reviewButton.className = "btn btn-primary";
   reviewButton.innerText = "Submit";
-  //reviewButton.setAttribute("type","submit")
-
   const mealImage = document.createElement("img");
   const mealname = document.createElement("h1");
   const videoLink = document.createElement("a");
@@ -134,7 +131,6 @@ function GetMealInstruction(element) {
   mealImage.src = element.strMealThumb;
   videoLink.href = element.strYoutube;
   videoLink.innerText = element.strYoutube;
-  //hasTags.innerText = element.strTags
   if (element.strTags) {
     const tags = element.strTags.split(",");
     tags.forEach((tag) => {
@@ -148,8 +144,7 @@ function GetMealInstruction(element) {
       hasTags.appendChild(button);
     });
   }
-  
-  instructionHeading.innerText = "Instructions";
+ instructionHeading.innerText = "Instructions";
   ingredientheading.innerText = "Ingredients";
   hasTagsHeading.innerText = "#Tags";
 
@@ -158,7 +153,6 @@ function GetMealInstruction(element) {
   hasTagsHeading.innerText = "#Tags";
   const arryOfIngredients = [];
   for (let i = 1; i < 30; i++) {
-    // console.log(element['strIngredient' + i])
     if (element["strIngredient" + i]) {
       arryOfIngredients.push(
         element["strMeasure" + i] + " - " + element["strIngredient" + i]
