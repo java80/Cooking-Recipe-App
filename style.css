@@ -6,7 +6,7 @@ body {
   padding: 0;
 }
 .app-name {
-  /* background-color: green; */
+  
   text-align: center;
   padding-top: 2%;
   flex-grow: 4;
@@ -15,23 +15,43 @@ body {
 }
 #container {
   background-color: white;
-  /* grid-template-columns: auto auto auto; */
   padding: 20px;
-  /* grid-gap: 20px; */
+  
 }
 .search-section {
   text-align: center;
   padding: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 786px){
+.search-section {
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+   .input-box{
+     margin: 1rem;
+   }
+   #blank{
+     width: 17rem
+   }
+   .search-random{
+     width: 17rem;
+   }
 }
 .message-class {
-  /* grid-column: 1/4; */
+ 
   margin-bottom: 20px;
 }
 .logo {
   display: block;
   width: 10%;
   height: 10%;
-  /* background-color: hotpink; */
+  
 }
 .icon {
   display: flex;
@@ -116,9 +136,13 @@ textarea {
 .table-class {
   margin: 0 auto;
 }
-@media screen and (max-width: 600px) {
+.input-box {
+ padding: 20px;
+}
+ @media screen and (max-width: 600px) {
   .food-list {
     background-color: red;
     grid-template-columns: repeat(2, 1fr);
   }
+  
 }
